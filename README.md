@@ -1,2 +1,2 @@
-# tanmayvijay.github.io
+# isaacjensen.github.io
 My portfolio website
