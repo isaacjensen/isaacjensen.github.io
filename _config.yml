@@ -21,10 +21,9 @@
 title: Isaac Jensen
 email: isaacjensentv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- My projects/posts during my software engineering journey.
+ Cool projects/posts during my software engineering journey.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: isaacinvegas
 github_username:  isaacjensen
 permalink: /:collection/:year-:month-:day-:title:output_ext
 # Build settings
