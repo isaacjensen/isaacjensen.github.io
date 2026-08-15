@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root{
+    --accent:#0f766e; --accent-bright:#10b981; --accent-soft:#f0fdfa;
+    --accent-border:#99f6e4; --text:#0f172a; --muted:#64748b; --border:#e2e8f0;
+  }
+  html,body{ width:1200px; height:630px; }
+  body{
+    background:#ffffff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    position:relative; overflow:hidden;
+  }
+  /* emerald wash, echoing the site hero */
+  .wash{ position:absolute; inset:0;
+    background:
+      radial-gradient(55% 60% at 12% 0%, rgba(16,185,129,.14), transparent 60%),
+      radial-gradient(50% 55% at 105% 8%, rgba(15,118,110,.12), transparent 55%);
+  }
+  /* accent rule down the left edge */
+  .edge{ position:absolute; left:0; top:0; bottom:0; width:12px;
+    background:linear-gradient(180deg,var(--accent),var(--accent-bright)); }
+
+  .card{ position:absolute; inset:0; padding:72px 80px; display:flex; align-items:center; }
+  .left{ max-width:720px; }
+
+  .pill{
+    display:inline-block; font-size:19px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--accent);
+    background:var(--accent-soft); border:1px solid var(--accent-border);
+    padding:8px 18px; border-radius:999px; margin-bottom:26px;
+  }
+  .name{ font-size:104px; font-weight:800; letter-spacing:-.03em; line-height:.98; }
+  .tag{ font-size:38px; font-weight:700; color:var(--accent); margin-top:18px; letter-spacing:-.01em; }
+  .sub{ font-size:24px; color:var(--muted); margin-top:14px; font-weight:500; }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+  .chip{ font-size:20px; font-weight:600; color:var(--accent);
+    background:var(--accent-soft); border:1px solid var(--accent-border);
+    padding:7px 16px; border-radius:10px; }
+
+  .url{ position:absolute; left:80px; bottom:64px; display:flex; align-items:center; gap:12px;
+    font-size:24px; font-weight:700; color:var(--text); }
+  .url .dot{ width:12px; height:12px; border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-bright)); }
+
+  /* right-side identity monogram with concentric rings */
+  .mark{ position:absolute; right:96px; top:50%; transform:translateY(-50%);
+    width:300px; height:300px; display:flex; align-items:center; justify-content:center; }
+  .ring{ position:absolute; border-radius:50%; border:2px solid var(--accent-border); }
+  .r1{ width:300px; height:300px; opacity:.55; }
+  .r2{ width:240px; height:240px; opacity:.8; }
+  .tile{ width:180px; height:180px; border-radius:38px;
+    background:linear-gradient(150deg,var(--accent),#0b5f58);
+    box-shadow:0 24px 60px rgba(15,118,110,.45);
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:82px; font-weight:800; letter-spacing:-.03em; }
+</style>
+</head>
+<body>
+  <div class="wash"></div>
+  <div class="edge"></div>
+
+  <div class="card">
+    <div class="left">
+      <span class="pill">Software Engineer</span>
+      <div class="name">Isaac&nbsp;Jensen</div>
+      <div class="tag">Secure identity infrastructure at scale</div>
+      <div class="sub">Identity &amp; access management · Cloud · Platform engineering</div>
+      <div class="chips">
+        <span class="chip">Keycloak</span>
+        <span class="chip">OAuth 2.0</span>
+        <span class="chip">SAML</span>
+        <span class="chip">AWS</span>
+        <span class="chip">FedRAMP</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mark">
+    <div class="ring r1"></div>
+    <div class="ring r2"></div>
+    <div class="tile">IJ</div>
+  </div>
+
+  <div class="url"><span class="dot"></span>isaacjensen.github.io</div>
+</body>
+</html>
