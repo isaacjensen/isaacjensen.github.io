@@ -37,6 +37,7 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#recognition">Recognition</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -63,6 +64,7 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#recognition">Recognition</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
       <a href="assets/Isaac_Jensen_Resume_2026.pdf" target="_blank" rel="noopener">Résumé</a>
@@ -389,6 +391,75 @@
         <p class="projects__more reveal">
           See all my repositories on <a href="https://github.com/isaacjensen" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
         </p>
+      </div>
+    </section>
+
+    <!-- ============================ RECOGNITION ============================ -->
+    <section class="section reco-band" id="recognition">
+      <div class="wrap">
+        <p class="section__label reveal">Recognition</p>
+        <h2 class="section__title reveal">Cited in the official Keycloak release notes</h2>
+
+        <div class="reco reveal">
+          <div class="reco__badge">
+            <svg viewBox="0 0 200 200" role="img" aria-label="Keycloak upstream contributor — key medallion">
+              <defs>
+                <linearGradient id="sealg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#10b981"/>
+                  <stop offset="1" stop-color="#0b5f58"/>
+                </linearGradient>
+                <path id="sealArc" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+              </defs>
+              <circle cx="100" cy="100" r="95" fill="url(#sealg)"/>
+              <circle cx="100" cy="100" r="84" fill="none" stroke="#ffffff" stroke-opacity=".30" stroke-width="1.5"/>
+              <text fill="#ffffff" fill-opacity=".92" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.4">
+                <textPath href="#sealArc" startOffset="0.5%">KEYCLOAK · FIPS 140-2 · UPSTREAM CONTRIBUTOR · </textPath>
+              </text>
+              <!-- key motif (Keycloak's own emblem is a key) -->
+              <g transform="translate(100,98)" fill="#ffffff" stroke="#ffffff">
+                <circle cx="0" cy="-28" r="19" fill="none" stroke-width="9"/>
+                <rect x="-4.5" y="-12" width="9" height="52" rx="2.5" stroke="none"/>
+                <rect x="4.5" y="20" width="17" height="8" rx="2" stroke="none"/>
+                <rect x="4.5" y="33" width="11" height="8" rx="2" stroke="none"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="reco__body">
+            <p class="reco__lead">
+              In my <strong>first year as a professional software engineer</strong>, I prototyped
+              <strong>FIPS 140-2 support</strong> for
+              <a href="https://www.keycloak.org/" target="_blank" rel="noopener">Keycloak</a>
+              by integrating BouncyCastle FIPS cryptographic providers at the JVM level. I contributed
+              the work upstream to the open-source project, and it was
+              <strong>acknowledged in Keycloak's official release notes</strong> when FIPS 140-2 support
+              landed. That early contribution became the cryptographic groundwork for running Keycloak in
+              FedRAMP and DoD environments — the very platform I help maintain today.
+            </p>
+            <ul class="reco__meta">
+              <li>First year of my career</li>
+              <li>2021–2022</li>
+              <li>Open source</li>
+              <li>BouncyCastle FIPS</li>
+            </ul>
+            <div class="reco__links">
+              <a class="btn btn--primary" href="https://www.keycloak.org/2022/11/fips" target="_blank" rel="noopener">Keycloak FIPS 140-2 announcement ↗</a>
+              <a class="btn btn--ghost" href="https://www.keycloak.org/server/fips" target="_blank" rel="noopener">FIPS docs ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="reco__about reveal">
+          <h3>What is Keycloak?</h3>
+          <p>
+            Keycloak is a widely used <strong>open-source identity and access management</strong>
+            platform. It handles user login, single sign-on, and industry standards like OAuth 2.0,
+            OpenID Connect, and SAML — so applications don't have to build authentication themselves.
+            Now a Cloud Native Computing Foundation (CNCF) project, it's used by companies and
+            governments worldwide, and it's the core of Trellix's IAM platform.
+            <a href="https://www.keycloak.org/" target="_blank" rel="noopener">keycloak.org&nbsp;↗</a>
+          </p>
+        </aside>
       </div>
     </section>
 
