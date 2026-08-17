@@ -158,16 +158,16 @@
               <p class="xp__date">Sep 2021 — Present</p>
             </div>
             <ul class="xp__points">
-              <li>Engineer on the <strong>Trellix IAM platform</strong> — identity infrastructure serving 110k+ daily authentications across all Trellix products, commercial AWS, and FedRAMP GovCloud.</li>
+              <li>Engineer on the <strong>Trellix IAM platform</strong> serving every Trellix product — 110k+ daily authentications across commercial AWS and FedRAMP GovCloud. Okta/Keycloak run the IdP at prod scale; we built the platform on top: a <strong>homegrown RBAC system</strong>, a sign-in web app, backend microservices, and an admin console.</li>
+              <li><strong>AI-assisted engineering</strong>: built custom Claude Code skills that automate our service upgrades end to end (2 hrs → 5 min), update docs, and open deployment Jiras; also created AI-driven security reviews that caught real production vulnerabilities.</li>
               <li>Own IAM <strong>FedRAMP/GovCloud</strong> end-to-end — features, compliance, incident response, and FedOps deployment coordination into FedRAMP Moderate, High, and DoD IL5.</li>
-              <li>Built Keycloak's first <strong>edge rate-limiting layer</strong> (API Gateway + AWS WAF, CloudFormation IaC) across commercial and GovCloud — de-risked the production Keycloak cutover.</li>
-              <li><strong>Sole Keycloak maintainer for 3+ years</strong> — 10+ major/minor upgrades (KC 21 → 26.x) across custom SPIs, Node.js Lambda clients, and the browser JS SDK, with zero downtime.</li>
-              <li>Pioneered <strong>AI-assisted platform engineering</strong>: built a Claude Code skill that takes Keycloak upgrades from ~2 hours to ~5 minutes, and AI-driven security review that caught real production vulnerabilities.</li>
+              <li>Built custom <strong>rate-limiting infrastructure</strong> for our identity backend, unblocking our FedRAMP production deployment.</li>
+              <li><strong>Sole Keycloak maintainer (3+ yrs)</strong>, managing our EKS (Kubernetes) clusters — Helm deployments, rolling upgrades, and Kubernetes Secrets — with 10+ zero-downtime upgrades (KC 21 → 26.x) across custom SPIs, Node.js Lambda clients, and the browser JS SDK.</li>
               <li>Remediated <strong>60+ security-scan findings</strong> (Wiz, BlackDuck, Invicti); hardened container images (Iron Bank, RapidFort, Chainguard); upgraded BouncyCastle FIPS libraries for FIPS 140-2 &amp; 140-3.</li>
             </ul>
             <div class="tags">
-              <span class="tag">Keycloak</span><span class="tag">Node.js</span><span class="tag">AWS</span>
-              <span class="tag">OAuth 2.0</span><span class="tag">FedRAMP</span><span class="tag">Kubernetes</span>
+              <span class="tag">Okta</span><span class="tag">Keycloak</span><span class="tag">Node.js</span><span class="tag">AWS</span>
+              <span class="tag">OAuth 2.0</span><span class="tag">RBAC</span><span class="tag">FedRAMP</span><span class="tag">Kubernetes</span>
             </div>
           </article>
 
@@ -217,6 +217,22 @@
         <div class="grid">
           <article class="card reveal">
             <div class="card__top">
+              <h3 class="card__title">C++ → Node.js Authorization Service Rewrite</h3>
+              <span class="card__badge">2025–26</span>
+            </div>
+            <p class="card__desc">
+              Rewrote a legacy C++ authorization service in Node.js/Express using a
+              <strong>purpose-built Claude Code (AI) skill</strong>, delivering it end to end in
+              <strong>~2 months vs a projected multi-year rewrite (~90% time saved)</strong>. Reviewed
+              the full flow and fixed the niche logic the AI missed.
+            </p>
+            <div class="card__foot">
+              <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">AI-assisted engineering</span></div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
               <h3 class="card__title">OAuth Implicit → Auth Code + PKCE Migration</h3>
               <span class="card__badge">2023–24</span>
             </div>
@@ -262,15 +278,14 @@
               <span class="card__badge">2022–23</span>
             </div>
             <p class="card__desc">
-              Built a full-stack <strong>OAuth 2.0 machine-to-machine</strong> credential management
-              system end to end, including the entire backend Lambda API and its integration with the
-              admin UI. It replaced a slow, ticket-driven IAM provisioning process with
-              <strong>on-demand self-service</strong>, letting teams create and manage their own
-              client credentials directly — which <strong>cut manual client-creation requests to
-              zero</strong> and removed a recurring bottleneck for the IAM team.
+              Built the backend Lambda APIs for a full-stack <strong>OAuth 2.0 machine-to-machine</strong>
+              credential system with self-service client management, where scopes are gated to each
+              tenant's product licenses. It replaced a ticket process where our team hand-minted every
+              client — <strong>cutting manual client-creation requests to zero</strong> and removing a
+              recurring bottleneck for the IAM team.
             </p>
             <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">RDS</span><span class="tag">AngularJS</span></div>
+              <div class="tags"><span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">Keycloak</span><span class="tag">RDS</span><span class="tag">Angular</span></div>
             </div>
           </article>
 
