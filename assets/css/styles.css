@@ -153,10 +153,13 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   margin-top: 56px; display: grid; gap: 18px;
   grid-template-columns: repeat(4, 1fr);
 }
+.stats--3 { grid-template-columns: repeat(3, 1fr); max-width: 780px; }
 .stat {
   padding: 20px 18px; border: 1px solid var(--border); border-radius: var(--radius);
   background: var(--bg-card); box-shadow: var(--shadow-sm);
 }
+.stat--link { text-decoration: none; color: inherit; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.stat--link:hover { border-color: var(--accent-border); transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .stat__num { display: block; font-size: clamp(24px, 3vw, 30px); font-weight: 800; color: var(--accent); letter-spacing: -.02em; }
 .stat__label { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); line-height: 1.35; }
 
