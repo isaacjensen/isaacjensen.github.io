@@ -15,7 +15,7 @@ no build step) deployed to **GitHub Pages via GitHub Actions**.
 │   ├── css/styles.css             # All styling. Theme tokens live in :root at the top.
 │   ├── js/main.js                 # Nav, mobile menu, scroll reveal, active-link highlighting
 │   ├── favicon.svg                # "IJ" monogram favicon
-│   └── Isaac_Jensen_Resume_2026.pdf   # Résumé (linked from the nav + hero)
+│   └── Isaac_Jensen_Resume_2026.pdf   # Resume (linked from the nav + hero)
 ├── .nojekyll                      # Tells GitHub Pages to serve files as-is (skip Jekyll)
 └── .github/workflows/deploy.yml   # GitHub Actions workflow that builds & deploys to Pages
 ```
@@ -40,7 +40,7 @@ no build step) deployed to **GitHub Pages via GitHub Actions**.
 - **Content:** edit the relevant `<section>` in `index.html`.
 - **Adding a project:** copy a `<article class="card">…</article>` block inside the
   right `.grid` in the Projects section.
-- **Résumé:** replace `assets/Isaac_Jensen_Resume_2026.pdf` (keep the filename, or update
+- **Resume:** replace `assets/Isaac_Jensen_Resume_2026.pdf` (keep the filename, or update
   the two links in `index.html`).
 
 ## How it deploys
