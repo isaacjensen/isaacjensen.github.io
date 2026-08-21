@@ -110,30 +110,28 @@
         <h2 class="section__title reveal">A little about me</h2>
         <div class="about reveal">
           <p>
-            I'm a software engineer focused on <strong>identity, security, and cloud
-            infrastructure</strong> — the systems other teams build on top of and rarely have to
-            think about. For nearly five years at <strong>Trellix (formerly McAfee)</strong>,
-            I've helped build and run the IAM platform behind every Trellix product, handling
-            <strong>110,000+ sign-ins a day</strong> across commercial AWS and FedRAMP-regulated
-            GovCloud.
+            I'm a software engineer focused on <span class="k">identity, security, and cloud
+            infrastructure</span>: the systems other teams build on top of and rarely have to think
+            about. For nearly five years at Trellix (formerly McAfee), I've helped build and run the
+            IAM platform behind every Trellix product, handling <span class="k">110,000+ sign-ins a
+            day</span> across commercial AWS and FedRAMP-regulated GovCloud.
           </p>
           <p>
-            What I enjoy most is how much of the stack the work spans. I build and operate across
-            the whole platform — the <strong>Node.js and Java serverless backends</strong> (AWS
-            Lambda) that issue tokens and enforce RBAC, the <strong>Angular admin console</strong>
-            where teams manage users, roles, and scopes, the framework-free <strong>browser
-            SDK</strong> behind sign-in and PKCE, an <strong>event-driven audit pipeline</strong>
-            (DynamoDB Streams + SQS) built for compliance, and the <strong>onboarding services</strong>
-            that provision new tenants and products. I'm also the <strong>sole maintainer of our
-            Keycloak identity server</strong> — carrying it through 10+ zero-downtime upgrades — and
-            I lead our FedRAMP/GovCloud IAM work end to end across Moderate, High, and DoD IL5.
+            What I enjoy most is how much of the stack the work spans. I build and operate across the
+            whole platform: the Node.js and Java serverless backends (AWS Lambda) that issue tokens
+            and enforce RBAC, the Angular admin console where teams manage users, roles, and scopes,
+            the framework-free browser SDK behind sign-in and PKCE, an event-driven audit pipeline
+            (DynamoDB Streams + SQS) built for compliance, and the onboarding services that provision
+            new tenants and products. I'm also the <span class="k">sole maintainer of our Keycloak
+            identity server</span>, carrying it through 10+ zero-downtime upgrades, and I am a main
+            point of contact for our FedRAMP/GovCloud IAM work across FedHigh, and DoD IL5.
           </p>
           <p>
-            Most recently I've been leaning into <strong>AI-assisted platform engineering</strong>
-            — building tooling that compresses multi-hour, error-prone upgrades into five-minute
-            automated runs, and turning a projected multi-year service rewrite into a two-month
-            one. I care about the unglamorous engineering that keeps important systems secure,
-            reliable, and pleasant to build on.
+            Most recently I've been leaning into <span class="k">AI-assisted platform
+            engineering</span>: building tooling that compresses multi-hour, error-prone upgrades
+            into five-minute automated runs, and turning a projected year-plus service rewrite into a
+            roughly four-month one. I care about the unglamorous engineering that keeps important
+            systems secure, reliable, and pleasant to build on.
           </p>
           <p class="about__personal">
             Outside of work you'll find me in the Seattle area cheering for the Mariners and Seahawks.
@@ -160,7 +158,7 @@
             <ul class="xp__points">
               <li>Engineer on the <strong>Trellix IAM platform</strong> serving every Trellix product — 110k+ daily authentications across commercial AWS and FedRAMP GovCloud. Okta/Keycloak run the IdP at prod scale; we built the platform on top: a <strong>homegrown RBAC system</strong>, a sign-in web app, backend microservices, and an admin console.</li>
               <li><strong>AI-assisted engineering</strong>: built custom Claude Code skills that automate our service upgrades end to end (2 hrs → 5 min), update docs, and open deployment Jiras; also created AI-driven security reviews that caught real production vulnerabilities.</li>
-              <li>Own IAM <strong>FedRAMP/GovCloud</strong> end-to-end — features, compliance, incident response, and FedOps deployment coordination into FedRAMP Moderate, High, and DoD IL5.</li>
+              <li>Leader in IAM <strong>FedRAMP/GovCloud</strong> — features, compliance, incident response, and FedOps deployment coordination into FedRAMP High, and DoD IL5.</li>
               <li>Built custom <strong>rate-limiting infrastructure</strong> for our identity backend, unblocking our FedRAMP production deployment.</li>
               <li><strong>Sole Keycloak maintainer (3+ yrs)</strong>, managing our EKS (Kubernetes) clusters — Helm deployments, rolling upgrades, and Kubernetes Secrets — with 10+ zero-downtime upgrades (KC 21 → 26.x) across custom SPIs, Node.js Lambda clients, and the browser JS SDK.</li>
               <li>Remediated <strong>60+ security-scan findings</strong> (Wiz, BlackDuck, Invicti); hardened container images (Iron Bank, RapidFort, Chainguard); upgraded BouncyCastle FIPS libraries for FIPS 140-2 &amp; 140-3.</li>
@@ -223,8 +221,9 @@
             <p class="card__desc">
               Rewrote a legacy C++ authorization service in Node.js/Express using a
               <strong>purpose-built Claude Code (AI) skill</strong>, delivering it end to end in
-              <strong>~2 months vs a projected multi-year rewrite (~90% time saved)</strong>. Reviewed
-              the full flow and fixed the niche logic the AI missed.
+              <strong>~4 months vs a projected year+ rewrite (~75% time saved)</strong>. Reviewed the
+              full flow and fixed the niche logic the AI missed. This was a turning point for me where
+              I truly harnessed the power of AI for development and never looked back.
             </p>
             <div class="card__foot">
               <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">AI-assisted engineering</span></div>
@@ -262,8 +261,8 @@
               Trellix act as a SAML IdP on top of its existing OAuth/OIDC identity: it ingests a
               Trellix IAM token, parses the claims, and mints a <strong>signed SAML assertion</strong>,
               while exposing a signing-certificate metadata API so downstream Service Providers can
-              verify those signatures. It directly <strong>unblocked the sale of Trellix's Mobile
-              Threat Defense product</strong>, which couldn't ship without IAM-token→SAML support —
+              verify those signatures. It directly <strong>unblocked the sale of a new Trellix
+              product</strong>, which couldn't ship without IAM-token→SAML support —
               and because it's generic, any future SAML-only product now onboards with zero custom
               integration work.
             </p>

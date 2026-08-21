@@ -147,6 +147,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   font-size: clamp(17px, 2.2vw, 20px); color: var(--text-soft);
 }
 .hero__lead strong { color: var(--text); font-weight: 700; }
+.about .k { color: var(--accent); font-weight: 600; }
 .hero__cta { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
 
 .stats {
