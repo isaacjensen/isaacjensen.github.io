@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Identity & access management, security, and cloud platform engineering." />
   <meta name="twitter:image" content="https://isaacjensen.github.io/assets/og-image.png" />
 
-  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="theme-color" content="#000000" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
   <!-- Fonts: Inter (UI) + JetBrains Mono (labels/meta) -->
@@ -35,397 +35,371 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============================ NAV ============================ -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__brand">Isaac&nbsp;Jensen</a>
-
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#recognition">Recognition</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="nav__actions">
-        <a class="btn btn--ghost" href="assets/Isaac_Jensen_Resume_2026.pdf" target="_blank" rel="noopener">Resume</a>
-        <div class="nav__social">
-          <a href="https://github.com/isaacjensen" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/isaacajensen/" target="_blank" rel="noopener" aria-label="LinkedIn" data-linkedin>
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
-          </a>
-          <a href="mailto:isaac.jensen@outlook.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M2 4h20c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm10 7.5L20.5 6h-17L12 11.5Zm0 2.2L3 7.9V18h18V7.9l-9 5.8Z"/></svg>
-          </a>
-        </div>
-        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#recognition">Recognition</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="assets/Isaac_Jensen_Resume_2026.pdf" target="_blank" rel="noopener">Resume</a>
-    </nav>
+  <!-- ============================ TOP BAR ============================ -->
+  <header class="topbar">
+    <a class="topbar__brand" href="#top"><span class="topbar__mark">IJ</span> isaacjensen</a>
+    <span class="topbar__clock" id="clock" aria-hidden="true">--:--:--</span>
   </header>
 
   <main id="main">
     <span id="top"></span>
 
     <!-- ============================ HERO ============================ -->
-    <section class="hero">
-      <div class="wrap">
-        <p class="hero__eyebrow reveal">📍 Seattle, WA</p>
-        <h1 class="hero__title reveal">Isaac Jensen</h1>
-        <p class="hero__role reveal">Software Engineer</p>
-        <p class="hero__lead reveal">
-          <strong>Software engineering</strong> &amp; <strong>cloud security</strong>
+    <section class="hero reveal">
+      <div class="hero__media">
+        <div class="avatar" aria-hidden="true"><span>IJ</span></div>
+        <p class="hero__loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.4-7-11a7 7 0 0 1 14 0c0 4.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Seattle, WA
         </p>
-        <div class="hero__cta reveal">
-          <a class="btn btn--primary" href="#projects">View my work</a>
-          <a class="btn btn--ghost" href="#contact">Get in touch</a>
-          <a class="btn btn--ghost" href="assets/Isaac_Jensen_Resume_2026.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        <div class="hero__social">
+          <a href="https://github.com/isaacjensen" target="_blank" rel="noopener" aria-label="GitHub" data-net="github">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/isaacajensen/" target="_blank" rel="noopener" aria-label="LinkedIn" data-net="linkedin" data-linkedin>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:isaac.jensen@outlook.com" aria-label="Email" data-net="email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 4h20c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1Zm10 7.5L20.5 6h-17L12 11.5Zm0 2.2L3 7.9V18h18V7.9l-9 5.8Z"/></svg>
+          </a>
         </div>
+      </div>
 
-        <div class="stats reveal">
-          <div class="stat"><span class="stat__num">5+ yrs</span><span class="stat__label">professional experience</span></div>
-          <a class="stat stat--link" href="#recognition"><span class="stat__num">Open Source</span><span class="stat__label">Keycloak contributor ↗</span></a>
-          <div class="stat"><span class="stat__num">3+ yrs</span><span class="stat__label">sole Keycloak maintainer</span></div>
-          <div class="stat"><span class="stat__num">FedRAMP</span><span class="stat__label">High · DoD IL5</span></div>
+      <div class="hero__body">
+        <h1 class="hero__name">Isaac Jensen</h1>
+        <p class="hero__tagline">Software Engineer <strong>|</strong> Identity · Security · Cloud</p>
+        <p class="hero__bio">
+          I build and run the <strong>identity platform behind every Trellix product</strong> — 110k+
+          daily sign-ins across commercial AWS and FedRAMP GovCloud. I care about the unglamorous
+          engineering that keeps important systems <strong>secure, reliable, and pleasant to build on</strong>.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Work With Me
+          </a>
+          <a class="btn" href="assets/Isaac_Jensen_Resume_2026.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Resume
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ============================ ABOUT ============================ -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <p class="section__label reveal">About</p>
-        <h2 class="section__title reveal">A little about me</h2>
-        <div class="about reveal">
-          <p>
-            I'm a software engineer focused on <span class="k">identity, security, and cloud
-            infrastructure</span>: the systems other teams build on top of and rarely have to think
-            about. For nearly five years at Trellix (formerly McAfee), I've helped build and run the
-            IAM platform behind every Trellix product, handling <span class="k">110,000+ sign-ins a
-            day</span> across commercial AWS and FedRAMP-regulated GovCloud.
+    <!-- ============================ PROFESSIONAL JOURNEY ============================ -->
+    <section class="section" id="experience">
+      <div class="shead reveal">
+        <span class="shead__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+        </span>
+        <h2 class="shead__title">Professional <span>Journey</span></h2>
+        <span class="shead__line"></span>
+      </div>
+
+      <div class="journey">
+        <article class="job reveal">
+          <div class="job__head">
+            <div>
+              <h3 class="job__co">Trellix <span class="job__co-note">(formerly McAfee)</span></h3>
+              <p class="job__role">Software Engineer</p>
+            </div>
+            <p class="job__date">Sep 2021 — Present</p>
+          </div>
+          <p class="job__desc">
+            Engineer on the <strong>Trellix IAM platform</strong> serving every Trellix product —
+            110k+ daily authentications across commercial AWS and FedRAMP GovCloud. Okta/Keycloak
+            run the IdP at prod scale; we built the platform on top: a homegrown RBAC system, a
+            sign-in web app, backend microservices, and an admin console.
           </p>
-          <p>
-            What I enjoy most is how much of the stack the work spans. I build and operate across the
-            whole platform: the Node.js and Java serverless backends (AWS Lambda) that issue tokens
-            and enforce RBAC, the Angular admin console where teams manage users, roles, and scopes,
-            the framework-free browser SDK behind sign-in and PKCE, an event-driven audit pipeline
-            (DynamoDB Streams + SQS) built for compliance, and the onboarding services that provision
-            new tenants and products. I'm also the <span class="k">sole maintainer of our Keycloak
-            identity server</span>, carrying it through 10+ zero-downtime upgrades, and I am a main
-            point of contact for our FedRAMP/GovCloud IAM work across FedHigh, and DoD IL5.
+          <ul class="job__points">
+            <li><strong>AI-assisted engineering</strong>: built custom Claude Code skills that automate service upgrades end to end (2 hrs → 5 min), update docs, and open deployment Jiras; created AI-driven security reviews that caught real production vulnerabilities.</li>
+            <li>Leader in IAM <strong>FedRAMP/GovCloud</strong> — features, compliance, incident response, and FedOps deployment coordination into FedRAMP High and DoD IL5.</li>
+            <li>Built custom <strong>rate-limiting infrastructure</strong> for our identity backend, unblocking our FedRAMP production deployment.</li>
+            <li><strong>Sole Keycloak maintainer (3+ yrs)</strong>, running our EKS clusters — Helm deployments, rolling upgrades, Kubernetes Secrets — with 10+ zero-downtime upgrades (KC 21 → 26.x) across custom SPIs, Node.js Lambda clients, and the browser JS SDK.</li>
+            <li>Remediated <strong>60+ security-scan findings</strong> (Wiz, BlackDuck, Invicti); hardened container images (Iron Bank, RapidFort, Chainguard); upgraded BouncyCastle FIPS libraries for FIPS 140-2 &amp; 140-3.</li>
+          </ul>
+          <div class="tags job__tags">
+            <span class="tag">Okta</span><span class="tag">Keycloak</span><span class="tag">Node.js</span><span class="tag">AWS</span>
+            <span class="tag">OAuth 2.0</span><span class="tag">RBAC</span><span class="tag">FedRAMP</span><span class="tag">Kubernetes</span>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__head">
+            <div>
+              <h3 class="job__co">Vacasa</h3>
+              <p class="job__role">Software Engineer, Intern</p>
+            </div>
+            <p class="job__date">Jun 2021 — Aug 2021</p>
+          </div>
+          <p class="job__desc">
+            Hardened AWS EC2 instances per Tevora penetration-test findings; fixed front-end UI defects.
           </p>
-          <p>
-            Most recently I've been leaning into <span class="k">AI-assisted platform
-            engineering</span>: building tooling that compresses multi-hour, error-prone upgrades
-            into five-minute automated runs, and turning a projected year-plus service rewrite into a
-            roughly four-month one. I care about the unglamorous engineering that keeps important
-            systems secure, reliable, and pleasant to build on.
+          <div class="tags job__tags"><span class="tag">AWS</span><span class="tag">Security</span><span class="tag">Front-end</span></div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__head">
+            <div>
+              <h3 class="job__co">McAfee</h3>
+              <p class="job__role">Software Engineer, Intern</p>
+            </div>
+            <p class="job__date">Mar 2020 — Sep 2020</p>
+          </div>
+          <p class="job__desc">
+            Built Concourse CI pipelines with metadata consolidated into an emailed report; wrote a
+            net-new JUnit test framework for untested AWS Lambdas — <strong>100% coverage</strong>,
+            enabling the team to write their own tests.
           </p>
-          <p class="about__personal">
-            Outside of work you'll find me in the Seattle area cheering for the Mariners and Seahawks.
-          </p>
-        </div>
+          <div class="tags job__tags"><span class="tag">Concourse CI</span><span class="tag">JUnit</span><span class="tag">AWS Lambda</span></div>
+        </article>
       </div>
     </section>
 
-    <!-- ============================ EXPERIENCE ============================ -->
-    <section class="section section--alt" id="experience">
-      <div class="wrap">
-        <p class="section__label reveal">Experience</p>
-        <h2 class="section__title reveal">Professional Journey</h2>
+    <!-- ============================ TECH ARSENAL ============================ -->
+    <section class="section" id="skills">
+      <div class="shead reveal">
+        <span class="shead__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+        </span>
+        <h2 class="shead__title">Tech <span>Arsenal</span></h2>
+        <span class="shead__line"></span>
+      </div>
 
-        <div class="timeline">
-          <article class="xp reveal">
-            <div class="xp__head">
-              <div>
-                <h3 class="xp__role">Software Engineer</h3>
-                <p class="xp__company">Trellix <span>(formerly McAfee)</span></p>
-              </div>
-              <p class="xp__date">Sep 2021 — Present</p>
-            </div>
-            <ul class="xp__points">
-              <li>Engineer on the <strong>Trellix IAM platform</strong> serving every Trellix product — 110k+ daily authentications across commercial AWS and FedRAMP GovCloud. Okta/Keycloak run the IdP at prod scale; we built the platform on top: a <strong>homegrown RBAC system</strong>, a sign-in web app, backend microservices, and an admin console.</li>
-              <li><strong>AI-assisted engineering</strong>: built custom Claude Code skills that automate our service upgrades end to end (2 hrs → 5 min), update docs, and open deployment Jiras; also created AI-driven security reviews that caught real production vulnerabilities.</li>
-              <li>Leader in IAM <strong>FedRAMP/GovCloud</strong> — features, compliance, incident response, and FedOps deployment coordination into FedRAMP High, and DoD IL5.</li>
-              <li>Built custom <strong>rate-limiting infrastructure</strong> for our identity backend, unblocking our FedRAMP production deployment.</li>
-              <li><strong>Sole Keycloak maintainer (3+ yrs)</strong>, managing our EKS (Kubernetes) clusters — Helm deployments, rolling upgrades, and Kubernetes Secrets — with 10+ zero-downtime upgrades (KC 21 → 26.x) across custom SPIs, Node.js Lambda clients, and the browser JS SDK.</li>
-              <li>Remediated <strong>60+ security-scan findings</strong> (Wiz, BlackDuck, Invicti); hardened container images (Iron Bank, RapidFort, Chainguard); upgraded BouncyCastle FIPS libraries for FIPS 140-2 &amp; 140-3.</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Okta</span><span class="tag">Keycloak</span><span class="tag">Node.js</span><span class="tag">AWS</span>
-              <span class="tag">OAuth 2.0</span><span class="tag">RBAC</span><span class="tag">FedRAMP</span><span class="tag">Kubernetes</span>
-            </div>
-          </article>
+      <div class="techgrid reveal">
+        <div class="tile"><img class="tile__icon" src="assets/tech/typescript.svg" alt="" loading="lazy" /><span class="tile__label">TypeScript</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/javascript.svg" alt="" loading="lazy" /><span class="tile__label">JavaScript</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/openjdk.svg" alt="" loading="lazy" /><span class="tile__label">Java</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/python.svg" alt="" loading="lazy" /><span class="tile__label">Python</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/cplusplus.svg" alt="" loading="lazy" /><span class="tile__label">C / C++</span></div>
 
-          <article class="xp reveal">
-            <div class="xp__head">
-              <div>
-                <h3 class="xp__role">Software Engineer, Intern</h3>
-                <p class="xp__company">Vacasa</p>
-              </div>
-              <p class="xp__date">Jun 2021 — Aug 2021</p>
-            </div>
-            <ul class="xp__points">
-              <li>Hardened AWS EC2 instances per Tevora penetration-test findings; fixed front-end UI defects.</li>
-            </ul>
-            <div class="tags"><span class="tag">AWS</span><span class="tag">Security</span><span class="tag">Front-end</span></div>
-          </article>
+        <div class="tile"><img class="tile__icon" src="assets/tech/nodedotjs.svg" alt="" loading="lazy" /><span class="tile__label">Node.js</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/express.svg" alt="" loading="lazy" /><span class="tile__label">Express</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/angular.svg" alt="" loading="lazy" /><span class="tile__label">Angular</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/gnubash.svg" alt="" loading="lazy" /><span class="tile__label">Bash</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/cypress.svg" alt="" loading="lazy" /><span class="tile__label">Cypress</span></div>
 
-          <article class="xp reveal">
-            <div class="xp__head">
-              <div>
-                <h3 class="xp__role">Software Engineer, Intern</h3>
-                <p class="xp__company">McAfee</p>
-              </div>
-              <p class="xp__date">Mar 2020 — Sep 2020</p>
-            </div>
-            <ul class="xp__points">
-              <li>Built Concourse CI pipelines with metadata consolidated into an emailed report; wrote a net-new JUnit test framework for untested AWS Lambdas — <strong>100% coverage</strong>, enabling the team to write their own tests.</li>
-            </ul>
-            <div class="tags"><span class="tag">Concourse CI</span><span class="tag">JUnit</span><span class="tag">AWS Lambda</span></div>
-          </article>
+        <div class="tile">
+          <span class="tile__glyph" style="color:#FF9900">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6.5 18a4.5 4.5 0 0 1-.5-8.97A6 6 0 0 1 17.7 8.3 4.5 4.5 0 0 1 17 18Z"/><path d="M4 20.5c5.5 2 10.5 2 16 0" stroke-width="1.6"/></svg>
+          </span>
+          <span class="tile__label">AWS</span>
         </div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/docker.svg" alt="" loading="lazy" /><span class="tile__label">Docker</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/kubernetes.svg" alt="" loading="lazy" /><span class="tile__label">Kubernetes</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/terraform.svg" alt="" loading="lazy" /><span class="tile__label">Terraform</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/helm.svg" alt="" loading="lazy" /><span class="tile__label">Helm</span></div>
+
+        <div class="tile"><img class="tile__icon" src="assets/tech/keycloak.svg" alt="" loading="lazy" /><span class="tile__label">Keycloak</span></div>
+        <div class="tile">
+          <span class="tile__glyph" style="color:var(--accent-2)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 7-7"/><path d="m16 4 3 3"/><path d="m14 7 2 2"/></svg>
+          </span>
+          <span class="tile__label">OAuth / OIDC</span>
+        </div>
+        <div class="tile">
+          <span class="tile__glyph" style="color:var(--accent-2)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9.5 12 1.8 1.8 3.4-3.6"/></svg>
+          </span>
+          <span class="tile__label">FedRAMP / FIPS</span>
+        </div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/jenkins.svg" alt="" loading="lazy" /><span class="tile__label">Jenkins</span></div>
+        <div class="tile"><img class="tile__icon" src="assets/tech/git.svg" alt="" loading="lazy" /><span class="tile__label">Git</span></div>
       </div>
     </section>
 
-    <!-- ============================ PROJECTS ============================ -->
+    <!-- ============================ FEATURED PROJECTS ============================ -->
     <section class="section" id="projects">
-      <div class="wrap">
-        <p class="section__label reveal">Selected work</p>
-        <h2 class="section__title reveal">Featured Projects</h2>
+      <div class="shead reveal">
+        <span class="shead__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+        </span>
+        <h2 class="shead__title">Featured <span>Projects</span></h2>
+        <span class="shead__line"></span>
+      </div>
 
-        <!-- ---- Professional work ---- -->
-        <div class="subhead reveal">
-          <h3 class="subhead__title">Professional work</h3>
-          <p class="subhead__note">Platform &amp; identity engineering at Trellix</p>
-        </div>
-
-        <div class="grid">
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">Greenfield OAuth 2.0 / OIDC Authorization Service</h3>
-              <span class="card__badge">2025–26</span>
+      <div class="projects">
+        <!-- Professional work -->
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">2025–26</span><img src="assets/tech/nodedotjs.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">Greenfield OAuth 2.0 / OIDC Authorization Service</h3>
+              <div class="proj__stack"><img src="assets/tech/nodedotjs.svg" alt="Node.js" /><img src="assets/tech/kubernetes.svg" alt="Kubernetes" /></div>
             </div>
-            <p class="card__desc">
-              Built an OAuth 2.0 / OIDC authorization service in Node.js/Express <strong>from
-              scratch</strong> to replace a legacy C++ service, implementing /authorize, /token,
-              /userinfo, /logout, dynamic client registration, JWKS, and token revocation, plus a
-              shared error-code contract. Used a <strong>purpose-built Claude Code (AI) skill</strong>,
-              delivering it end to end in <strong>~4 months vs a projected year+ rewrite (~75% time
-              saved)</strong>. Packaged for Kubernetes with Helm and Terraform and wired into TeamCity
-              CI. Reviewed the full flow and fixed the niche logic the AI missed. This was a turning
-              point for me where I truly harnessed the power of AI for development and never looked
-              back.
+            <p class="proj__desc">
+              Built an OAuth 2.0 / OIDC authorization service in Node.js/Express <strong>from scratch</strong>
+              to replace a legacy C++ service — <code>/authorize</code>, <code>/token</code>,
+              <code>/userinfo</code>, dynamic client registration, JWKS, and token revocation. Used a
+              purpose-built Claude Code (AI) skill, delivering it end to end in <strong>~4 months vs a
+              projected year+ rewrite</strong>. Packaged for Kubernetes with Helm and Terraform.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">OAuth 2.0 / OIDC</span><span class="tag">Kubernetes</span><span class="tag">Helm</span><span class="tag">Terraform</span></div>
-            </div>
-          </article>
+            <div class="proj__links"><span class="proj__badge">Trellix · Production</span></div>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">OAuth Implicit → Auth Code + PKCE Migration</h3>
-              <span class="card__badge">2023–24</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">2023–24</span><img src="assets/tech/keycloak.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">OAuth Implicit → Auth Code + PKCE Migration</h3>
+              <div class="proj__stack"><img src="assets/tech/nodedotjs.svg" alt="Node.js" /><img src="assets/tech/keycloak.svg" alt="Keycloak" /></div>
             </div>
-            <p class="card__desc">
+            <p class="proj__desc">
               Led a platform-wide migration from the legacy OAuth <em>Implicit</em> flow to
-              <strong>Authorization Code Flow with PKCE</strong>, coordinating changes across four
-              separate repositories — the Keycloak server, the Node.js Lambda backend, the browser
-              sign-in SDK, and the FedRAMP environment. PKCE is now the default authentication flow
-              for every Trellix product, hardening <strong>110k+ daily authentications</strong>
-              against token-interception attacks. Along the way I <strong>cut sign-in load by
-              ~20%</strong> by removing a blocking, multi-second <code>/scopes</code> fetch that
-              gated the login form, moving scope resolution to a cached backend authorization
-              service.
+              <strong>Authorization Code Flow with PKCE</strong> across four repositories — Keycloak,
+              the Node.js Lambda backend, the browser sign-in SDK, and FedRAMP. PKCE is now the default
+              for every Trellix product, hardening <strong>110k+ daily authentications</strong>. Also
+              <strong>cut sign-in load ~20%</strong> by removing a blocking <code>/scopes</code> fetch.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">OAuth 2.0</span><span class="tag">Keycloak</span><span class="tag">JavaScript</span></div>
-            </div>
-          </article>
+            <div class="proj__links"><span class="proj__badge">Trellix · Production</span></div>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">SAML IdP Delegation Service</h3>
-              <span class="card__badge">2026</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">2026</span><span class="proj__glyph">SAML</span></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">SAML IdP Delegation Service</h3>
+              <div class="proj__stack"><img src="assets/tech/nodedotjs.svg" alt="Node.js" /></div>
             </div>
-            <p class="card__desc">
-              Designed and built a reusable <strong>SAML Identity Provider service</strong> that lets
-              Trellix act as a SAML IdP on top of its existing OAuth/OIDC identity: it ingests a
-              Trellix IAM token, parses the claims, and mints a <strong>signed SAML assertion</strong>,
-              while exposing a signing-certificate metadata API so downstream Service Providers can
-              verify those signatures. It directly <strong>unblocked the sale of a new Trellix
-              product</strong>, which couldn't ship without IAM-token→SAML support —
-              and because it's generic, any future SAML-only product now onboards with zero custom
-              integration work.
+            <p class="proj__desc">
+              A reusable <strong>SAML Identity Provider service</strong> on top of Trellix's OAuth/OIDC
+              identity: it ingests a Trellix IAM token, parses the claims, and mints a
+              <strong>signed SAML assertion</strong>, exposing a signing-certificate metadata API for
+              downstream Service Providers. It directly <strong>unblocked the sale of a new Trellix
+              product</strong> — and any future SAML-only product now onboards with zero custom work.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">Secrets Manager</span><span class="tag">SAML 2.0</span></div>
-            </div>
-          </article>
+            <div class="proj__links"><span class="proj__badge">Trellix · Production</span></div>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">Client Credentials Management Dashboard</h3>
-              <span class="card__badge">2022–23</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">2022–23</span><img src="assets/tech/angular.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">Client Credentials Management Dashboard</h3>
+              <div class="proj__stack"><img src="assets/tech/nodedotjs.svg" alt="Node.js" /><img src="assets/tech/angular.svg" alt="Angular" /></div>
             </div>
-            <p class="card__desc">
-              Built the backend Lambda APIs for a full-stack <strong>OAuth 2.0 machine-to-machine</strong>
+            <p class="proj__desc">
+              Backend Lambda APIs for a full-stack <strong>OAuth 2.0 machine-to-machine</strong>
               credential system with self-service client management, where scopes are gated to each
               tenant's product licenses. It replaced a ticket process where our team hand-minted every
-              client — <strong>cutting manual client-creation requests to zero</strong> and removing a
-              recurring bottleneck for the IAM team.
+              client — <strong>cutting manual client-creation requests to zero</strong>.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">Keycloak</span><span class="tag">RDS</span><span class="tag">Angular</span></div>
-            </div>
-          </article>
+            <div class="proj__links"><span class="proj__badge">Trellix · Production</span></div>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">Keycloak FIPS 140-2 Prototype</h3>
-              <span class="card__badge">2021–22</span>
+        <!-- Open source / personal -->
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">Open source</span><img src="assets/tech/javascript.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">isaac-coin — a blockchain in JS</h3>
+              <div class="proj__stack"><img src="assets/tech/javascript.svg" alt="JavaScript" /></div>
             </div>
-            <p class="card__desc">
-              Prototyped <strong>FIPS 140-2 compliance</strong> for Keycloak by wiring BouncyCastle
-              FIPS cryptographic providers in at the JVM level — a prerequisite for running the
-              identity platform in FedRAMP and DoD environments. The work was
-              <strong>contributed back upstream and cited in the official Keycloak release
-              notes</strong>, and it laid the cryptographic groundwork for the FedRAMP/GovCloud
-              platform I maintain today.
+            <p class="proj__desc">
+              A from-scratch <strong>blockchain in JavaScript</strong> — no frameworks. Implements a
+              <strong>proof-of-work</strong> miner, full chain verification, <strong>wallet
+              generation</strong> with public/private key pairs, and cryptographically
+              <strong>signed transactions</strong> — the core primitives behind a real blockchain.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Java</span><span class="tag">BouncyCastle FIPS</span></div>
-            </div>
-          </article>
-        </div>
-
-        <!-- ---- Open source / personal ---- -->
-        <div class="subhead reveal">
-          <h3 class="subhead__title">Open source &amp; personal</h3>
-          <p class="subhead__note">Selected projects from
-            <a href="https://github.com/isaacjensen" target="_blank" rel="noopener">github.com/isaacjensen</a>
-          </p>
-        </div>
-
-        <div class="grid">
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">isaac-coin — a blockchain in JS</h3>
-              <span class="card__badge card__badge--lang">JavaScript</span>
-            </div>
-            <p class="card__desc">
-              A from-scratch <strong>blockchain implementation in JavaScript</strong>, built to
-              understand how cryptocurrencies actually work under the hood — no frameworks, no magic.
-              It implements a simple <strong>proof-of-work</strong> mining algorithm, full chain
-              verification to detect tampering, <strong>wallet generation</strong> with public/private
-              key pairs, and cryptographically <strong>signed transactions</strong> — the core
-              primitives behind a real blockchain.
-            </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">JavaScript</span><span class="tag">Cryptography</span><span class="tag">Proof-of-Work</span></div>
-              <a class="card__repo" href="https://github.com/isaacjensen/isaac-coin" target="_blank" rel="noopener" aria-label="isaac-coin on GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-                View repo
+            <div class="proj__links">
+              <a class="proj__link" href="https://github.com/isaacjensen/isaac-coin" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                Source Code
               </a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">Python → C/C++ Compiler Front-End</h3>
-              <span class="card__badge card__badge--lang">C++ · Flex/Bison</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">Open source</span><img src="assets/tech/cplusplus.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">Python → C/C++ Compiler Front-End</h3>
+              <div class="proj__stack"><img src="assets/tech/cplusplus.svg" alt="C++" /></div>
             </div>
-            <p class="card__desc">
-              A three-stage <strong>compiler front-end</strong> for a simplified subset of Python,
-              built across a term-long compilers course. It begins with a <strong>Flex lexical
-              scanner</strong> that tokenizes source into syntactic categories, adds a <strong>Bison
-              grammar</strong> that parses those tokens, and culminates in generating an
-              <strong>abstract syntax tree</strong> — rendered to a GraphViz visualization and used as
-              the intermediate representation for emitting equivalent C/C++ code.
+            <p class="proj__desc">
+              A three-stage <strong>compiler front-end</strong> for a subset of Python: a
+              <strong>Flex</strong> lexical scanner, a <strong>Bison</strong> grammar, and generation
+              of an <strong>abstract syntax tree</strong> — rendered to GraphViz and used as the IR for
+              emitting equivalent C/C++.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">C++</span><span class="tag">Flex</span><span class="tag">Bison</span><span class="tag">GraphViz</span></div>
-              <a class="card__repo" href="https://github.com/isaacjensen/python-ast-visualizer" target="_blank" rel="noopener" aria-label="Python compiler on GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-                View repo
+            <div class="proj__links">
+              <a class="proj__link" href="https://github.com/isaacjensen/python-ast-visualizer" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                Source Code
               </a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">JOS Operating System Kernel Labs</h3>
-              <span class="card__badge card__badge--lang">C</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">Open source</span><span class="proj__glyph">C</span></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">JOS Operating System Kernel Labs</h3>
+              <div class="proj__stack"></div>
             </div>
-            <p class="card__desc">
-              A series of labs implementing core pieces of <strong>JOS</strong>, a small teaching
-              operating-system kernel, in C. Across four labs the work covers low-level system
-              bring-up — <strong>bootstrapping and the kernel monitor</strong>, physical and virtual
+            <p class="proj__desc">
+              Labs implementing core pieces of <strong>JOS</strong>, a teaching OS kernel, in C:
+              <strong>bootstrapping and the kernel monitor</strong>, physical/virtual
               <strong>memory management</strong>, user environments and system calls, and
-              <strong>preemptive multitasking</strong> with a round-robin scheduler across multiple
-              CPUs — the hands-on internals behind how an OS boots, isolates processes, and shares
-              the hardware.
+              <strong>preemptive multitasking</strong> with a round-robin scheduler across CPUs.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">C</span><span class="tag">x86</span><span class="tag">OS Internals</span></div>
-              <a class="card__repo" href="https://github.com/isaacjensen/os2-jos-lab4" target="_blank" rel="noopener" aria-label="JOS labs on GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-                View repo
+            <div class="proj__links">
+              <a class="proj__link" href="https://github.com/isaacjensen/os2-jos-lab4" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                Source Code
               </a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <h3 class="card__title">Cloud REST API Suite</h3>
-              <span class="card__badge card__badge--lang">Node.js</span>
+        <article class="proj reveal">
+          <div class="proj__thumb"><span class="proj__year">Open source</span><img src="assets/tech/nodedotjs.svg" alt="" loading="lazy" /></div>
+          <div class="proj__body">
+            <div class="proj__top">
+              <h3 class="proj__title">Cloud REST API Suite</h3>
+              <div class="proj__stack"><img src="assets/tech/nodedotjs.svg" alt="Node.js" /><img src="assets/tech/express.svg" alt="Express" /><img src="assets/tech/docker.svg" alt="Docker" /></div>
             </div>
-            <p class="card__desc">
-              A progression of <strong>RESTful API projects</strong> in Node.js and Express, evolving
-              from clean API design through to a production-shaped service. Along the way it covers
-              <strong>containerizing with Docker</strong>, backing the API with a <strong>MySQL
-              database</strong>, documenting endpoints with an <strong>OpenAPI</strong> spec, and
-              layering in <strong>authentication and authorization</strong> — capped by a
-              Spotify-style API as the final project.
+            <p class="proj__desc">
+              A progression of <strong>RESTful API projects</strong> in Node.js/Express — from clean
+              API design to a production-shaped service: <strong>Docker</strong> containerization, a
+              <strong>MySQL</strong> database, an <strong>OpenAPI</strong> spec, and auth — capped by a
+              Spotify-style API.
             </p>
-            <div class="card__foot">
-              <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MySQL</span><span class="tag">Docker</span><span class="tag">OpenAPI</span></div>
-              <a class="card__repo" href="https://github.com/isaacjensen/spotify-api" target="_blank" rel="noopener" aria-label="Cloud API suite on GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-                View repo
+            <div class="proj__links">
+              <a class="proj__link" href="https://github.com/isaacjensen/spotify-api" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.09 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                Source Code
               </a>
             </div>
-          </article>
-        </div>
-
-        <p class="projects__more reveal">
-          See all my repositories on <a href="https://github.com/isaacjensen" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
-        </p>
+          </div>
+        </article>
       </div>
+
+      <p style="margin-top:24px;font-family:var(--mono);font-size:14px;color:var(--muted)">
+        More on <a href="https://github.com/isaacjensen" target="_blank" rel="noopener">github.com/isaacjensen&nbsp;↗</a>
+      </p>
     </section>
 
-    <!-- ============================ RECOGNITION ============================ -->
-    <section class="section reco-band" id="recognition">
-      <div class="wrap">
-        <p class="section__label reveal">Recognition</p>
-        <h2 class="section__title reveal">Cited in the official Keycloak release notes</h2>
+    <!-- ============================ ACHIEVEMENTS & BADGES ============================ -->
+    <section class="section" id="recognition">
+      <div class="shead reveal">
+        <span class="shead__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg>
+        </span>
+        <h2 class="shead__title">Achievements <span>&amp; Badges</span></h2>
+        <span class="shead__line"></span>
+      </div>
 
-        <div class="reco reveal">
-          <div class="reco__badge">
+      <div class="badges">
+        <!-- Featured: Keycloak upstream contribution -->
+        <article class="badge badge--feature reveal">
+          <div class="badge__medal">
             <svg viewBox="0 0 200 200" role="img" aria-label="Keycloak upstream contributor — key medallion">
               <defs>
                 <linearGradient id="sealg" x1="0" y1="0" x2="1" y2="1">
@@ -439,7 +413,6 @@
               <text fill="#ffffff" fill-opacity=".92" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.4">
                 <textPath href="#sealArc" startOffset="0.5%">KEYCLOAK · FIPS 140-2 · UPSTREAM CONTRIBUTOR · </textPath>
               </text>
-              <!-- key motif (Keycloak's own emblem is a key) -->
               <g transform="translate(100,98)" fill="#ffffff" stroke="#ffffff">
                 <circle cx="0" cy="-28" r="19" fill="none" stroke-width="9"/>
                 <rect x="-4.5" y="-12" width="9" height="52" rx="2.5" stroke="none"/>
@@ -448,108 +421,68 @@
               </g>
             </svg>
           </div>
-
-          <div class="reco__body">
-            <p class="reco__lead">
-              An early upstream contribution to
-              <a href="https://www.keycloak.org/" target="_blank" rel="noopener">Keycloak</a>:
-              a <strong>FIPS 140-2 prototype</strong> integrating BouncyCastle FIPS cryptographic
-              providers at the JVM level. Contributed to the open-source project and
-              <strong>acknowledged in Keycloak's official release notes</strong> when FIPS 140-2
-              support landed, it became the cryptographic groundwork for running Keycloak in FedRAMP
-              and DoD environments — the foundation behind Trellix's IAM platform today.
+          <div>
+            <h3 class="badge__title">Cited in the official Keycloak release notes</h3>
+            <p class="badge__desc">
+              An early upstream contribution to <a href="https://www.keycloak.org/" target="_blank" rel="noopener">Keycloak</a>:
+              a <strong>FIPS 140-2 prototype</strong> integrating BouncyCastle FIPS providers at the JVM
+              level. Contributed to the open-source project and <strong>acknowledged in Keycloak's
+              official release notes</strong> when FIPS 140-2 support landed — the cryptographic
+              groundwork for running Keycloak in FedRAMP and DoD environments.
             </p>
-            <ul class="reco__meta">
-              <li>2021–2022</li>
-              <li>Open source</li>
-              <li>BouncyCastle FIPS</li>
-            </ul>
-            <div class="reco__links">
-              <a class="btn btn--primary" href="https://www.keycloak.org/2022/11/fips" target="_blank" rel="noopener">Keycloak FIPS 140-2 announcement ↗</a>
-              <a class="btn btn--ghost" href="https://www.keycloak.org/server/fips" target="_blank" rel="noopener">FIPS docs ↗</a>
+            <div class="tags badge__meta">
+              <span class="tag tag--accent">2021–2022</span><span class="tag tag--accent">Open source</span><span class="tag tag--accent">BouncyCastle FIPS</span>
+            </div>
+            <div class="badge__links">
+              <a class="btn btn--primary" href="https://www.keycloak.org/2022/11/fips" target="_blank" rel="noopener">Keycloak FIPS announcement ↗</a>
+              <a class="btn" href="https://www.keycloak.org/server/fips" target="_blank" rel="noopener">FIPS docs ↗</a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <aside class="reco__about reveal">
-          <h3>What is Keycloak?</h3>
-          <p>
-            Keycloak is a widely used <strong>open-source identity and access management</strong>
-            platform. It handles user login, single sign-on, and industry standards like OAuth 2.0,
-            OpenID Connect, and SAML — so applications don't have to build authentication themselves.
-            Now a Cloud Native Computing Foundation (CNCF) project, it's used by companies and
-            governments worldwide, and it's the core of Trellix's IAM platform.
-            <a href="https://www.keycloak.org/" target="_blank" rel="noopener">keycloak.org&nbsp;↗</a>
-          </p>
-        </aside>
+        <article class="badge reveal">
+          <span class="badge__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9.5 12 1.8 1.8 3.4-3.6"/></svg></span>
+          <div>
+            <h3 class="badge__title">FedRAMP High &amp; DoD IL5</h3>
+            <p class="badge__desc">Main point of contact for IAM in FedRAMP/GovCloud — features, compliance, incident response, and FedOps deployment into FedRAMP High and DoD IL5.</p>
+          </div>
+          <div class="tags badge__meta"><span class="tag">FedRAMP High</span><span class="tag">DoD IL5</span><span class="tag">NIST 800-53</span></div>
+        </article>
+
+        <article class="badge reveal">
+          <span class="badge__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><circle cx="12" cy="10" r="2.5"/><path d="M12 12.5V16"/></svg></span>
+          <div>
+            <h3 class="badge__title">FIPS 140-2 &amp; 140-3 hardening</h3>
+            <p class="badge__desc">Upgraded BouncyCastle FIPS libraries and remediated 60+ security-scan findings (Wiz, BlackDuck, Invicti); hardened images via Iron Bank, RapidFort, and Chainguard.</p>
+          </div>
+          <div class="tags badge__meta"><span class="tag">FIPS 140-2/3</span><span class="tag">Container hardening</span></div>
+        </article>
       </div>
     </section>
 
-    <!-- ============================ SKILLS ============================ -->
-    <section class="section section--alt" id="skills">
-      <div class="wrap">
-        <p class="section__label reveal">Skills</p>
-        <h2 class="section__title reveal">Tech Arsenal</h2>
-
-        <div class="skills">
-          <div class="skillgroup reveal">
-            <h3 class="skillgroup__title">Languages &amp; Tools</h3>
-            <div class="tags">
-              <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Java</span>
-              <span class="tag">Python 3</span><span class="tag">C/C++</span><span class="tag">Bash</span>
-              <span class="tag">SQL</span><span class="tag">Node.js</span><span class="tag">Angular</span>
-              <span class="tag">Express</span><span class="tag">JUnit</span><span class="tag">Cypress</span>
-              <span class="tag">Git</span><span class="tag">Helm</span>
-            </div>
-          </div>
-
-          <div class="skillgroup reveal">
-            <h3 class="skillgroup__title">Cloud &amp; DevOps</h3>
-            <div class="tags">
-              <span class="tag">AWS Lambda</span><span class="tag">API Gateway</span><span class="tag">WAF</span>
-              <span class="tag">CloudFormation</span><span class="tag">DynamoDB</span><span class="tag">RDS</span>
-              <span class="tag">EC2</span><span class="tag">S3</span><span class="tag">AWS GovCloud</span>
-              <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span>
-              <span class="tag">Jenkins</span><span class="tag">CI/CD</span>
-            </div>
-          </div>
-
-          <div class="skillgroup reveal">
-            <h3 class="skillgroup__title">Identity &amp; Security</h3>
-            <div class="tags">
-              <span class="tag">Keycloak</span><span class="tag">OAuth 2.0</span><span class="tag">PKCE</span>
-              <span class="tag">SAML 2.0</span><span class="tag">OIDC</span><span class="tag">FIPS 140-2/3</span>
-              <span class="tag">FedRAMP</span><span class="tag">DoD IL5</span><span class="tag">NIST 800-53</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ CONTACT ============================ -->
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <p class="section__label reveal">Get in touch</p>
-        <h2 class="section__title reveal">Let's talk</h2>
-        <p class="contact__lead reveal">
-          Always happy to talk about identity, security, and platform engineering — or anything
-          else interesting. The fastest way to reach me is email.
-        </p>
-        <div class="contact__actions reveal">
-          <a class="btn btn--primary" href="mailto:isaac.jensen@outlook.com">isaac.jensen@outlook.com</a>
-          <a class="btn btn--ghost" href="https://github.com/isaacjensen" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/isaacajensen/" target="_blank" rel="noopener" data-linkedin>LinkedIn ↗</a>
-        </div>
+    <!-- ============================ CLOSING CTA ============================ -->
+    <section class="cta" id="contact">
+      <h2 class="cta__title reveal">Let's build something <span>secure</span></h2>
+      <p class="cta__lead reveal">
+        Always happy to talk identity, security, and platform engineering — or anything else
+        interesting. The fastest way to reach me is email.
+      </p>
+      <div class="cta__actions reveal">
+        <a class="btn btn--primary" href="mailto:isaac.jensen@outlook.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          isaac.jensen@outlook.com
+        </a>
+        <a class="btn" href="https://github.com/isaacjensen" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/isaacajensen/" target="_blank" rel="noopener" data-linkedin>LinkedIn ↗</a>
       </div>
     </section>
   </main>
 
   <!-- ============================ FOOTER ============================ -->
   <footer class="footer">
-    <div class="wrap footer__inner">
-      <p class="footer__name">Isaac Jensen</p>
+    <div class="footer__inner">
+      <p class="footer__name"><span>~/</span>Isaac Jensen · © <span id="year"></span></p>
       <p class="footer__note">Built with plain HTML, CSS &amp; JS · Deployed on GitHub Pages</p>
-      <p class="footer__copy">© <span id="year"></span> Isaac Jensen</p>
     </div>
   </footer>
 
